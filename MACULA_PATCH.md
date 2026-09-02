@@ -6,7 +6,7 @@ set from `["std"]` to `[]` so `no_std` consumers (via Cargo's
 `[patch.crates-io]`) do not get `std` re-enabled through feature
 unification.
 
-Used by [macula-kernel](https://codeberg.org/macula-internal/macula-kernel)
+Used by [macula-kernel](https://github.com/macula-io/macula-kernel)
 to satisfy `quinn-proto`'s transitive dependency on `thiserror` without
 pulling `std` into the kernel target.
 
